@@ -1,0 +1,14 @@
+*.py[co]
+*.sw[a-z]
+*~
+.DS_Store
+Thumbs.db
+*.orig
+.wkrc
+
+log/*
+run/*
+tmp/*
+!log/.empty
+!run/.empty
+!tmp/.empty

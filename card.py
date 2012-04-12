@@ -10,8 +10,10 @@ class Card(Ice):
     }
 
     def __init__(self, rank, suit):
+        # 1=ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11=jack, 12=queen, 13=king
         self.rank = rank
         self.suit = suit
+        self.is_turned = False
         self.img = '{0}{1}.png'.format(suit, rank)
 
     @property

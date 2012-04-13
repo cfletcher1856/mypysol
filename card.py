@@ -15,6 +15,7 @@ class Card(Ice):
         self.suit = suit
         self.is_turned = False
         self.img = '{0}{1}.png'.format(suit, rank)
+        self.selected = False
 
     @property
     def color(self):

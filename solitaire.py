@@ -1,13 +1,15 @@
 import os
 import sys
-from random import shuffle, randint
-from pprint import pprint
+from random import shuffle
 
 import pygame
 from pygame.locals import *
 
 from refs import refs
 from card import Card
+
+# Init game
+pygame.init()
 
 # Booleans to track state
 refs.status = 'deal'
@@ -86,8 +88,6 @@ def update_cards():
             offset += 15
 
         tabelauoffset -= 80
-
-    print len(refs.deck)
 
 
 def mainGame(framerate=60):
